@@ -8,6 +8,7 @@ import clinexusLogoWhite from "@/assets/site/clinexus-logo-white.png";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "Industries", to: "/industries" },
+  { label: "Tutorials", to: "/tutorials" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
   { label: "Privacy Policy", to: "/privacy" },

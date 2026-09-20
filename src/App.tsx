@@ -24,6 +24,10 @@ import SiteAbout from "./site/pages/About";
 import SiteContact from "./site/pages/Contact";
 import SitePrivacy from "./site/pages/Privacy";
 import SiteTerms from "./site/pages/Terms";
+import SiteTutorials from "./site/pages/Tutorials";
+import SiteTutorialClinicType from "./site/pages/TutorialClinicType";
+import SiteTutorialSection from "./site/pages/TutorialSection";
+import SiteTutorialDetail from "./site/pages/TutorialDetail";
 import SiteScrollToTop from "./site/components/ScrollToTop";
 import { MaintenanceGate } from "@/components/MaintenanceGate";
 
@@ -191,6 +195,10 @@ const App = () => (
             <Route path="/contact" element={<SiteContact />} />
             <Route path="/privacy" element={<SitePrivacy />} />
             <Route path="/terms" element={<SiteTerms />} />
+            <Route path="/tutorials" element={<SiteTutorials />} />
+            <Route path="/tutorials/:clinicType" element={<SiteTutorialClinicType />} />
+            <Route path="/tutorials/:clinicType/:section" element={<SiteTutorialSection />} />
+            <Route path="/tutorials/:clinicType/:section/:tutorial" element={<SiteTutorialDetail />} />
             <Route path="/demo" element={<Navigate to="/signup" replace />} />
 
             <Route path="/login" element={<Login />} />
